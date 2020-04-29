@@ -1,12 +1,15 @@
 {
   "name": "forkify",
+  "homepage": "https://eblanchard88.github.io/forkify",
   "version": "1.0.0",
   "description": "forkify project",
   "main": "index.js",
   "scripts": {
     "dev": "webpack --mode development",
     "build": "webpack --mode production",
-    "start": "webpack-dev-server --mode development --open"
+    "start": "webpack-dev-server --mode development --open",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "author": "Eric Blanchard",
   "license": "ISC",
@@ -23,6 +26,7 @@
     "axios": "^0.19.2",
     "core-js": "^3.6.4",
     "fractional": "^1.0.0",
+    "gh-pages": "^2.2.0",
     "regenerator-runtime": "^0.13.5",
     "uniqid": "^5.2.0"
   }
