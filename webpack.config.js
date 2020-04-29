@@ -12,7 +12,7 @@ module.exports = {
     },
     plugins: [
         new HtmlWebpackPlugin({
-            filename: 'indexMe2.html',
+            filename: 'index.html',
             template: './src/index.html'
         })
     ],
